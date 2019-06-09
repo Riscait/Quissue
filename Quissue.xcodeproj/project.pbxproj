@@ -15,6 +15,9 @@
 		8D83819F22AB846900F26641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D83819D22AB846900F26641 /* LaunchScreen.storyboard */; };
 		8D8381AA22AB846900F26641 /* QuissueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8381A922AB846900F26641 /* QuissueTests.swift */; };
 		8D8381B522AB846A00F26641 /* QuissueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8381B422AB846A00F26641 /* QuissueUITests.swift */; };
+		8D8381C622AB8D8300F26641 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8381C322AB8D8300F26641 /* Int+.swift */; };
+		8D8381C722AB8D8300F26641 /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8381C422AB8D8300F26641 /* UIScrollView+.swift */; };
+		8D8381C822AB8D8300F26641 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8381C522AB8D8300F26641 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8D8381B022AB846A00F26641 /* QuissueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuissueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8381B422AB846A00F26641 /* QuissueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuissueUITests.swift; sourceTree = "<group>"; };
 		8D8381B622AB846A00F26641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D8381C322AB8D8300F26641 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		8D8381C422AB8D8300F26641 /* UIScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
+		8D8381C522AB8D8300F26641 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		8D83819122AB846800F26641 /* Quissue */ = {
 			isa = PBXGroup;
 			children = (
+				8D8381C222AB8D2400F26641 /* Extensions */,
 				8D83819222AB846800F26641 /* AppDelegate.swift */,
 				8D83819422AB846800F26641 /* SceneDelegate.swift */,
 				8D83819622AB846800F26641 /* ContentView.swift */,
@@ -134,6 +141,16 @@
 				8D8381B622AB846A00F26641 /* Info.plist */,
 			);
 			path = QuissueUITests;
+			sourceTree = "<group>";
+		};
+		8D8381C222AB8D2400F26641 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D8381C322AB8D8300F26641 /* Int+.swift */,
+				8D8381C522AB8D8300F26641 /* String+.swift */,
+				8D8381C422AB8D8300F26641 /* UIScrollView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +286,10 @@
 			files = (
 				8D83819322AB846800F26641 /* AppDelegate.swift in Sources */,
 				8D83819522AB846800F26641 /* SceneDelegate.swift in Sources */,
+				8D8381C722AB8D8300F26641 /* UIScrollView+.swift in Sources */,
 				8D83819722AB846800F26641 /* ContentView.swift in Sources */,
+				8D8381C822AB8D8300F26641 /* String+.swift in Sources */,
+				8D8381C622AB8D8300F26641 /* Int+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +463,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.nerco.Quissue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -463,6 +484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.nerco.Quissue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
